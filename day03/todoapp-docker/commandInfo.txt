@@ -1,0 +1,22 @@
+$ podman image rm skillsync96/test-repo:latest
+==> Used to remove image 
+$ podman image rm skillsync96/test-repo:latest --force
+  
+$ podman images
+==> Used to view Images
+
+$ podman run -itd -p 3000:3000 --name=multiStage multi-stage:latest
+==> Used to run the container, used the name parameter for defining the name of container 
+    
+$ podman ps
+==> Shows container processes
+    
+$ podman logs multiStage 
+==> Shows logs of container
+
+$ podman exec -it multiStage sh
+==> Used to enter inside the container
+
+$ podman inspect multiStage 
+==> Used to get information of Container, used for troubleshooting
+
