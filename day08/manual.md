@@ -38,12 +38,10 @@ spec:
 
 ##### Sample Output
 ```bash
-bash
 $ kubectl apply -f rc.yml 
 ```
 Output: replicationcontroller/nginx-rc configured
 ```bash
-bash
 $ kubectl get pods
 ```
 ```bash
@@ -61,7 +59,6 @@ nginx-rc   3         3         3       4m38s
 ```
 ##### Get info about specific Pods
 ```bash
-bash
 $ kubectl get pods
 ```
 ###### Output:
@@ -73,7 +70,6 @@ nginx-rc-xff79   1/1     Running   0          33m
 ```
 ---
 ```bash
-bash
 $ kubectl describe pods nginx-rc-xff79
 ```
 ###### Output:
@@ -171,7 +167,6 @@ spec:
 ```
 Run the above yml
 ```bash
-bash
 $ kubectl apply -f rs.yml
 ```
 Output:
@@ -197,11 +192,9 @@ $ kubectl edit rs/nginx-rs
 ```
 ##### Change replicas using shell command
 ```bash
-bash
 $ kubectl scale --replicas=7 rs/nginx-rs
 ```
 ```bash
-bash
 $ kubectl get pods
 ```
 ```bash
@@ -265,12 +258,10 @@ spec:
 ```
 Run this Deployment (Make sure you delete existing pods)
 ```bash
-bash
 $ kubectl apply -f deploy.yml
 ```
 ##### Get all objects of a deoloyment
 ```bash
-bash
 $ kubectl get all
 ```
 Output:
